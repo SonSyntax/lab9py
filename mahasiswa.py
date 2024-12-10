@@ -1,4 +1,7 @@
-from data.mahasiswa import Mahasiswa
+class Mahasiswa:
+    def __init__(self, nama, nim):
+        self.nama = nama
+        self.nim = nim
 
-def tampilkan_mahasiswa(mahasiswa):
-    print(mahasiswa.get_info())
+    def get_info(self):
+        return f"Nama: {self.nama}, NIM: {self.nim}"
